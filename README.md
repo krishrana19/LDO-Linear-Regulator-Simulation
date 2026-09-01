@@ -7,7 +7,7 @@ This repository contains the design and simulation of a continuous-time $12\text
 The regulator utilizes an operational amplifier acting as an error amplifier to drive an NMOS pass transistor operating in its saturation region. 
 * **The Feedback Loop:** A $10\text{k}\Omega / 10\text{k}\Omega$ resistive voltage divider samples the output voltage and feeds it back to the inverting (-) terminal of the op-amp.
 * **Error Correction:** The non-inverting (+) terminal is tied to a stable $2.5\text{V}$ DC reference. Utilizing the virtual ground concept, the op-amp dynamically adjusts the NMOS gate voltage (typically pushing it to $\sim8\text{V}$) to maintain equilibrium, forcing the source output to exactly $5\text{V}$.
-* **Steady-State Error:** A minimal $3\text{mV}$ steady-state error was observed ($4.997\text{V}$ output), which accurately reflects the finite open-loop gain limitations of the LM324 op-amp model.
+* **Steady-State Error:** A minimal $3\text{mV}$ steady-state error was observed ($5.003\text{V}$ output), which accurately reflects the finite open-loop gain limitations of the LM324 op-amp model.
 
 ## 🛠️ Component Selection
 * **Error Amplifier:** LM324 Operational Amplifier 
@@ -20,7 +20,7 @@ The regulator utilizes an operational amplifier acting as an error amplifier to 
 ## 📊 Simulation Results
 
 ### 1. DC Operating Point & Line Regulation
-The baseline circuit was tested with a static $50\Omega$ load (drawing $100\text{mA}$). A DC voltage sweep was performed on the main supply rail from $6\text{V}$ to $15\text{V}$.
+The baseline circuit was tested with a static $50\Omega$ load (drawing $100\text{mA}$). A DC voltage sweep was performed on the main supply rail from $5\text{V}$ to $12\text{V}$.
 * **Result:** The control loop successfully rejects supply fluctuations, holding a flat, regulated $5\text{V}$ output across the entire operational range.
 
 ![Base Schematic](Images/Base_Schematic.png)
