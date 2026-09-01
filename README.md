@@ -42,7 +42,7 @@ To test the speed and stability of the feedback loop, the static load was replac
 
 ### 3. AC Small-Signal Analysis (Bode Plot)
 A closed-loop AC transfer characteristic simulation was run from 10 Hz to 10 MHz to evaluate system stability and bandwidth.
-* **Result:** The low-frequency gain sits precisely at ~6.85 dB, confirming the non-inverting voltage multiplier of 2.2. The loop exhibits a flat response up to ~400 kHz bandwidth, and rolls off smoothly without severe high-frequency peaking, indicating stable closed-loop dynamics with adequate phase margin.
+* **Result:** The low-frequency gain sits precisely at ~6.85 dB, confirming the non-inverting voltage multiplier of 2.2. The loop exhibits a flat response up to ~200 kHz bandwidth, and rolls off smoothly without severe high-frequency peaking, indicating stable closed-loop dynamics with adequate phase margin.
 
 ![Bode Plot](Simulation_Plots/Closed_Loop_Bode_Plot.png)
 *Figure 5: Closed-Loop AC Transfer Characteristic*
