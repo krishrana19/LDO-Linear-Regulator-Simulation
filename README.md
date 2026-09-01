@@ -39,6 +39,13 @@ To test the speed and stability of the feedback loop, the static load was replac
 ![Transient Plot](Simulation_Plots/Transient_Load_Step.png)
 *Figure 4: Transient Analysis demonstrating $2.5 \mu\text{s}$ recovery time during load steps*
 
+### 3. AC Small-Signal Analysis (Bode Plot)
+A closed-loop AC transfer characteristic simulation was run from $10\text{ Hz}$ to $10\text{ MHz}$ to evaluate system stability and bandwidth.
+* **Result:** The low-frequency gain sits precisely at $\approx 6\text{ dB}$, confirming the non-inverting voltage multiplier of $2$. The loop exhibits a flat response up to $\sim 200\text{ kHz}$ bandwidth, with minor frequency peaking near the roll-off frequency, indicating stable but slightly under-damped closed-loop dynamics.
+
+![Bode Plot](Simulation_Plots/Closed_Loop_Bode_Plot.png)
+*Figure 5: Closed-Loop AC Transfer Characteristic*
+
 ---
 ## 📂 Repository Structure
 * `/TINA_TI_Schematics/` - Contains the runnable `.TSC` simulation files.
